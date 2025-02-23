@@ -21,7 +21,6 @@
     <main class="main">
       <section class="main-content">
         <article class="card">
-          <div >
             <h3 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h3>
             <div class="image-container img-blur">
               <p class="image-label">&lt;/html&gt;</p>
@@ -51,10 +50,9 @@
                 </button>
               </div>
             </div>
-          </di>
         </article>
         <article class="card">
-          <div >
+          <div>
             <h3 class="card-title">1 спринт: Я — чистый лист</h3>
             <div class="image-container img-grayscale">
               <p class="image-label">&lt;/html&gt;</p>
@@ -285,7 +283,7 @@
           </div>
         </article>
         <article class="floppy">
-          <button class="button floppy-button" href="#dialog-id" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
+          <button class="button floppy-button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
             <svg class="floppy-icon" fill="currentColor" viewBox="0 0 42 42" width="21" height="21">
               <use href="svg/floppy.svg#icon"></use>
             </svg>
@@ -295,8 +293,7 @@
             <svg class="floppy-icon__dialog" fill="var(--contour-color)" viewBox="0 0 42 42" width="39" height="39">
               <use href="svg/floppy.svg#icon"></use>
             </svg>
-            <p>Вставьте
-              дискету, чтобы продолжить</p>
+            <p class="floppy-dialog-text">Вставьте дискету, чтобы продолжить</p>
             <button class="dialog-button" onclick="window['dialog-id'].close();">ок</button>
           </dialog>
         </article>

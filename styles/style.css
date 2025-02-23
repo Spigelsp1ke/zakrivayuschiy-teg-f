@@ -365,14 +365,22 @@
 .floppy-dialog[open] {
   display: grid;
   grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr 1fr;
   inline-size: 353px;
   block-size: 191px;
   padding: 30px;
-  gap: 12px;
-  font-family: var(--accent-font);
-  text-transform: uppercase;
-  line-height: 21px;
+  column-gap: 20px;
+  row-gap: 30px;
   color: #000;
+  overflow: hidden;
+}
+
+.floppy-dialog[open] .floppy-dialog-text {
+  font-family: var(--accent-font);
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .floppy-icon__dialog {
@@ -383,7 +391,7 @@
   grid-column: span 2;
   background-color: #fff;
   font-family: var(--accent-font);
-  block-size: 55px;
+  block-size: 38px;
   line-height: 12.6px;
   font-size: 14px;
   text-transform: uppercase;
@@ -433,6 +441,6 @@
     padding-inline: 40px;
     padding-block: 30px;
     inline-size: 341px;
-    overflow: hidden;
+    column-gap: 16px;
   }
 }

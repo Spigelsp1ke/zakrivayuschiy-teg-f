@@ -2,8 +2,8 @@
 :root {
     --main-text-font: Inter-Variable, Arial, sans-serif;
     --accent-font: PressStart2P, Impact, sans-serif;
-    --card-title-weight: 'wght' 700;
-    --text-weight: 'wght' 400;
+    --card-title-weight: "wght" 700;
+    --text-weight: "wght" 400;
     --card-title-padding: 10px;
     --text-padding: 25px;
     --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
