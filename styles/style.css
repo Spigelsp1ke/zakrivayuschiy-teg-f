@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
   min-block-size: 368px;
-  margin-block: 100px;
+  margin-block: 102px;
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -95,7 +95,7 @@
 }
 
 .card-title {
-  font-variation-settings: var(--card-title-weight);
+  font-variation-settings: "wght" var(--card-title-weight);
   padding-inline: var(--card-title-padding);
   border: 2px solid #000;
   font-size: 18px;
@@ -111,7 +111,7 @@
 }
 
 .card-text {
-  font-variation-settings: var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
   line-height: 118%;
   font-size: 18px;
 }
@@ -120,29 +120,6 @@
   position: relative;
   border-inline-start: 2px solid #000;
   border-inline-end: 2px solid #000;
-}
-
-.image-label {
-  top: 25px;
-  right: 25px;
-  position: absolute;
-  mix-blend-mode: hard-light;
-  opacity: 0.5;
-  font-family: var(--accent-font);
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-  text-shadow: -1px 0 var(--outline-color), 0 1px var(--outline-color),
-    1px 0 var(--outline-color), 0 -1px var(--outline-color);
-}
-
-@supports (text-stroke: 1px var(--outline-color)) {
-  text-stroke: 1px var(--outline-color);
-  text-shadow: none;
-}
-
-.label-lower {
-  text-transform: lowercase;
 }
 
 .card-image {
@@ -182,6 +159,30 @@
 
 .img-contrast-bright {
   filter: contrast(110%) brightness(150%);
+}
+
+.image-label {
+  top: 25px;
+  right: 25px;
+  position: absolute;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  font-family: var(--accent-font);
+  color: #000;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-shadow: -1px 0 var(--outline-color), 0 1px var(--outline-color),
+    1px 0 var(--outline-color), 0 -1px var(--outline-color);
+}
+
+@supports (text-stroke: 1px var(--outline-color)) {
+  text-stroke: 1px var(--outline-color);
+  text-shadow: none;
+}
+
+.label-lower {
+  text-transform: lowercase;
 }
 
 .button-content {
